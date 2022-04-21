@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Formulario Simple" name="description">
+    <meta content="Plain, HTML, form, basic, practice" name="keywords">
+    <title>This is a basic HTML Form</title>
+</head>
+<body>
+<header>
+    <h1>Fomularios</h1>
+</header>
+<main>
+    <h3>Formulario de Registros</h3>
+    <sec>
+        <form action="">
+            <fieldset>
+                <legend>
+                    Datos Obligatorios
+                </legend>
+                <p>
+                    <label>
+                        Nombre
+                        <input placeholder="John" type="text"/>
+                    </label>
+                </p>
+                <!-- Al linkear label con input usando un ID y FOR el supuesto "error desaparece -->
+                <p>
+                    <label for="apellido">Apellido</label>
+                    <input id="apellido" placeholder="Doe" type="text"/>
+                </p>
+                <label>
+                    Email
+                    <input placeholder="Jdoe@mail.com" type="email"/>
+                </label>
+                <p>
+                    <label>Edad</label>
+                    <input max="35" min="10" placeholder="20" type="number">
+                </p>
+                <p>
+                    <label>
+                        Fecha
+                        <input type="date"/>
+                    </label>
+                </p>
+            </fieldset>
+        </form>
+    </sec>
+</main>
+</body>
+</html>
