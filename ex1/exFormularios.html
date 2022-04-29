@@ -22,17 +22,17 @@
                 <p>
                     <label>
                         Nombre
-                        <input placeholder="John" type="text"/>
+                        <input placeholder="John" type="text" required/>
                     </label>
                 </p>
                 <!-- Al linkear label con input usando un ID y FOR el supuesto "error desaparece -->
                 <p>
                     <label for="apellido">Apellido</label>
-                    <input id="apellido" placeholder="Doe" type="text"/>
+                    <input id="apellido" placeholder="Doe" type="text" required/>
                 </p>
                 <label>
                     Email
-                    <input placeholder="Jdoe@mail.com" type="email"/>
+                    <input placeholder="Jdoe@mail.com" type="email" required/>
                 </label>
                 <p>
                     <label>Edad</label>
@@ -45,6 +45,74 @@
                     </label>
                 </p>
             </fieldset>
+            <!-- Datos adicionales -->
+            <fieldset>
+                <legend>Datos Adicionales</legend>
+                <label>
+                    Color Favorito
+                    <input type="color"/>
+                </label>
+                <p>
+                    <label>
+                        Adjuntar Foto
+                        <input type="file" required/>
+                    </label>
+                </p>
+                <p>
+                    <!-- Errores según IDE -->
+                    <label>Indicanos tu género</label>
+                    <input name="genero" type="radio"/>Masculino
+                    <input name="genero" type="radio"/>Femenino
+                    <input name="genero" type="radio"/>No divulgar
+                </p>
+                <p>
+                    <!-- Sin errores según IDE, creo que no existe necesidad de usar P -->
+                    <label>
+                        Idicanos tu gusto musical
+                        <input name="estilo" type="radio"/>Blues
+                        <input name="estilo" type="radio"/>Rock
+                        <input name="estilo" type="radio"/>Metal
+                    </label>
+                </p>
+                <!-- VALUES son importantes para asignar/detectar el valor de un elemento  -->
+                <label>
+                    Selecciona tus hobbies
+                    <input type="checkbox" value="GUI"/>Guitarra
+                    <input type="checkbox" value="VIO"/>Violin
+                    <input type="checkbox" value="FUT"/>Futbol
+                </label>
+                <p>
+                    <label>
+                        Selecciona tu departamento
+                        <select>
+                            <option disabled selected>-selecciona tu ciudad-</option>
+                            <option value="AR">Arequipa</option>
+                            <option value="TR">Trujillo</option>
+                            <option value="LIB">La Libertad</option>
+                            <option value="LI">Lima</option>
+                            <option value="CUS">Cusco</option>
+                            <option value="TA">Tacna</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Cuéntanos más de ti
+                        <br>
+                        <textarea rows="10" cols="35" placeholder="Escribe aquí"></textarea>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Ingresa tu salario Esperado
+                        <input type="range">
+                    </label>
+                </p>
+            </fieldset>
+            <br>
+            <!-- Submit debe estar dentro del form, se puede usar un button con type summit -->
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Limpiar">
         </form>
     </sec>
 </main>
