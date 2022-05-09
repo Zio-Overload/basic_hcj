@@ -1,0 +1,68 @@
+/*FATLTA RE-APRENDER ALINEACIONES ENTRE LABEL-INPUT, CSS GRID */
+
+h1 {
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+h2 {
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+
+
+}
+
+label {
+    text-align: right;
+    color: lightseagreen;
+
+
+}
+
+.noBold {
+    color: darkblue;
+
+}
+
+::placeholder {
+    color: royalblue;
+
+}
+
+button {
+    font-weight: bold;
+    -webkit-text-fill-color: darkblue;
+}
+
+
+#descCourse2::placeholder {
+    color: lightgray;
+
+
+}
+
+#introVideo {
+
+    color: blue;
+    font-weight: bold;
+
+}
+
+div {
+    padding-bottom: 5px;
+}
+
+.Bold {
+    font-weight: bold;
+}

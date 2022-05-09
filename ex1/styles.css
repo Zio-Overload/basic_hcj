@@ -1,0 +1,32 @@
+h3 {
+    color: aqua;
+    font-family: "Roboto Condensed", serif;
+
+}
+
+h1 {
+
+    color: lightgreen;
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+
+input {
+    border-radius: 4px;
+
+}
+
+/* Esto es un selector de CLASE*/
+
+.principal {
+
+    text-decoration: underline;
+}
+
+/* Esto es un selector de ID, !IMPORTANT es usado para darle la mayor prioridad al cambio, ese cambio se realiza si o si, */
+/* sobreescribe cualquier otro cambio*/
+#aboutPerson {
+
+    background-color: bisque !important;
+    font-family: "Hack Nerd Font", sans-serif;
+
+}

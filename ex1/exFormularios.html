@@ -5,6 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Formulario Simple" name="description">
     <meta content="Plain, HTML, form, basic, practice" name="keywords">
+    <link href="styles.css" rel="stylesheet"/> <!-- TO LINK AN EXTERNAL CSS FILE -->
     <title>This is a basic HTML Form</title>
 </head>
 <body>
@@ -22,17 +23,17 @@
                 <p>
                     <label>
                         Nombre
-                        <input placeholder="John" type="text" required/>
+                        <input placeholder="John" required type="text"/>
                     </label>
                 </p>
                 <!-- Al linkear label con input usando un ID y FOR el supuesto "error desaparece -->
                 <p>
                     <label for="apellido">Apellido</label>
-                    <input id="apellido" placeholder="Doe" type="text" required/>
+                    <input id="apellido" placeholder="Doe" required type="text"/>
                 </p>
                 <label>
                     Email
-                    <input placeholder="Jdoe@mail.com" type="email" required/>
+                    <input placeholder="Jdoe@mail.com" required type="email"/>
                 </label>
                 <p>
                     <label>Edad</label>
@@ -55,7 +56,7 @@
                 <p>
                     <label>
                         Adjuntar Foto
-                        <input type="file" required/>
+                        <input required type="file"/>
                     </label>
                 </p>
                 <p>
@@ -75,7 +76,7 @@
                     </label>
                 </p>
                 <!-- VALUES son importantes para asignar/detectar el valor de un elemento  -->
-                <label>
+                <label class="principal">
                     Selecciona tus hobbies
                     <input type="checkbox" value="GUI"/>Guitarra
                     <input type="checkbox" value="VIO"/>Violin
@@ -96,14 +97,14 @@
                     </label>
                 </p>
                 <p>
-                    <label>
+                    <label id="aboutPerson">
                         Cuéntanos más de ti
                         <br>
-                        <textarea rows="10" cols="35" placeholder="Escribe aquí"></textarea>
+                        <textarea cols="35" placeholder="Escribe aquí" rows="10"></textarea>
                     </label>
                 </p>
                 <p>
-                    <label>
+                    <label class="principal">
                         Ingresa tu salario Esperado
                         <input type="range">
                     </label>

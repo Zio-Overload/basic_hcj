@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Reto simple CSS" name="description">
+    <meta content="css, style, basics, learning" name="keywords">
+    <link href="reto1.css" rel="stylesheet"/>
+    <title>Reto CSS</title>
+</head>
+<body>
+<header>
+    <h1>
+        Selectores CSS
+    </h1>
+</header>
+<main>
+    <section>
+        <h2>
+            Formulario
+        </h2>
+        <form action="">
+            <fieldset>
+                <legend>
+                    Formulario de Creación de un curso
+                </legend>
+                <div>
+                    <label>
+                        Nombre del curso
+                        <input class="noBold" placeholder="Ejm: Vue JS" type="text">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Precio del Curso
+                        <input class="noBold" max="1500" min="400" placeholder="Precio Soles" type="number">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Fecha de Inicio
+                        <input class="noBold" type="date">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Correo del Docente
+                        <input class="Bold" placeholder="@gmail.com" type="email"/>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Elija el turno
+                        <input name="turno" type="radio">Mañana
+                        <input name="turno" type="radio">Noche
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Tipo de Pago
+                        <input name="pago" type="radio">En cuotas
+                        <input name="pago" type="radio">Directo
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Idiomas del Curso
+                        <input name="idioma" type="radio">Español
+                        <input name="idioma" type="radio">Inglés
+                        <input name="idioma" type="radio">Portugués
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Nivel de curso
+                        <select id="selectCurso">
+                            <option disabled selected>-Seleccione-</option>
+                            <option value="B">Basico</option>
+                            <option value="I">intermedio</option>
+                            <option value="A">Avanzado</option>
+                        </select>
+                    </label>
+                </div>
+                <br>
+
+                <div>
+                    <label id="descCourse">
+                        Descripción del Curso
+                        <textarea cols="20" id="descCourse2" placeholder="Descripción general del curso"
+                                  rows="5"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Video de Introducción
+                        <input id="introVideo" type="file">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Color Base de Curso
+                        <input type="color">
+                    </label>
+                </div>
+                <br>
+                <button type="submit">Crear Curso</button>
+                <button type="reset">Limpiar Formulario</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
+</body>
+</html>
